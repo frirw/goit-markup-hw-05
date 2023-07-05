@@ -424,7 +424,11 @@
         <div class="footer-contact-form-container">
           <p class="footer-contact-form-text">Subscribe</p>
           <form class="subscribe-form">
-            <label for="input-email" aria-label="footer email">
+            <label
+              for="input-email"
+              aria-label="footer email"
+              class="footer-label"
+            >
               <input
                 type="email"
                 name="input-email"
@@ -496,10 +500,10 @@
             </div>
           </div>
           <div class="modal-field-comment">
-            <label for="user-text" class="modal-label">Comment</label>
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal-textarea"
             ></textarea>
@@ -507,19 +511,19 @@
           <div class="modal-field-checkbox">
             <input
               type="checkbox"
-              name="policy"
-              id="policy"
+              name="user-privacy"
+              id="user-privacy"
               class="input-check visually-hidden"
               value="true"
             />
-            <label for="policy" class="check-text">
-              <span>
+            <label for="user-privacy" class="check-text">
+              <span class="check-span">
                 <svg class="check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#"></use>
+                  <use href="./images/icons.svg#icon-click"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the&nbsp;
-              <a href="" class="policy-link">Privacy Policy</a>
+              <a href="">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="modal-send-btn">Send</button>
